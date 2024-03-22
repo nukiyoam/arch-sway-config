@@ -1,5 +1,7 @@
 # auto start 
 exec_always --no-startup-id workstyle & > /dev/null
 exec_always --no-startup-id  fcitx5 -d 
-exec_always --no-startup-id  jetbrains-toolbox -d 
+exec_always --no-startup-id  ~/Applications/jetbrains-toolbox/jetbrains-toolbox & > /dev/null
 exec_always --no-startup-id ~/Applications/Clash/cfw -d 
+# polkit 代理程序 需要安装 polkit-gnome
+exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 -d

@@ -1,0 +1,4 @@
+#%PAM-1.0
+
+# 指纹解锁
+auth		sufficient  	pam_fprintd.so
