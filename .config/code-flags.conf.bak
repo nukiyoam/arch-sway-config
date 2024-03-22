@@ -1,0 +1,6 @@
+--enable-features=UseOzonePlatform 
+--enable-features=WebRTCPipeWireCapturer 
+--enable-features=WaylandWindowDecorations 
+--ozone-platform=wayland 
+--enable-wayland-ime
+--ozone-platform-hit=auto

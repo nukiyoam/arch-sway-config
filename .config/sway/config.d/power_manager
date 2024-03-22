@@ -1,0 +1,8 @@
+### Idle configuration
+#
+# Example configuration:
+#
+exec swayidle -w \
+         timeout 300 '$lock_command' \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep '$lock_command'

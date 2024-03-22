@@ -1,0 +1,7 @@
+# 将一些窗口设置为始终悬浮
+    for_window [class="Clash for Windows"] floating enable 
+    for_window [class="jetbrains-toolbox"] floating enable 
+
+# 标记 xwayland 窗口
+    for_window [shell="xwayland"] title_format "[X] %title"
+

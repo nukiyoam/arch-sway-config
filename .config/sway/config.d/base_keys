@@ -1,0 +1,55 @@
+#
+# Basics:
+#
+    # Start a terminal
+    bindsym $mod+Return exec $term
+
+    # Kill focused window
+    bindsym $mod+Shift+q kill
+
+    # Start your launcher
+    bindsym $mod+d exec $menu
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # 锁屏
+    bindsym $mod+Alt+l exec $lock_command
+
+    # Exit Resart sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+r exec restart -t warning -m 'You pressed the restart shortcut. Do you really want to restart sway? This will restart your Wayland session.' -B 'Yes, restart sway' 'swaymsg exit'
+
+
+#
+# Function keys:
+#
+
+    # XF86 keys for brightness
+ 	#bindsym XF86MonBrightnessDown exec light -A 5
+ 	#bindsym XF86MonBrightnessUP exec light -U 5
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+
+	# XF86 key for toggling wifi
+ 	bindsym XF86WLAN exec wifi_toggle
+	# XF86 key for toggling webcam
+ 	bindsym XF86Tools exec webcam_toggle
+
+    # volume config
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+    bindsym --locked XF86AudioPlay exec playerctl play-pause
+    bindsym --locked XF86AudioNext exec playerctl next
+    bindsym --locked XF86AudioPrev exec playerctl previous

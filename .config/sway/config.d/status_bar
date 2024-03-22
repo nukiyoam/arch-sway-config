@@ -1,0 +1,25 @@
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    position top
+    # config see ~/.config/waybar/config.jsonc 
+    swaybar_command waybar
+    # When the status_command prints a new line to stdout, swaybar updates.
+    # The default just shows the current date and time.
+    #status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+
+    #colors {
+    #    statusline #ffffff
+    #    background #323232
+    #    inactive_workspace #32323200 #32323200 #5c5c5c
+    #}
+}
+
+# 蓝牙托盘图标
+exec blueman-applet
+
+# 网络管理托盘图标
+# 必须使用 exec_always 原因在 https://www.reddit.com/r/swaywm/comments/gd09i0/waybar_nmapplet_tray/
+exec_always nm-applet --indicator

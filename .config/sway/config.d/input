@@ -1,0 +1,42 @@
+# 触摸板配置
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
+# 触摸板配置
+input "1267:12815:VEN_04F3:00_04F3:320F_Touchpad" {
+    # 启用轻触点击
+    tap enabled
+    # 自然滚动
+    natural_scroll enabled
+    # 鼠标指针加速类型 adaptive：自适应 flat： 恒定
+    accel_profile adaptive
+    # 打字时禁用触摸板
+    dwt enabled
+}
+
+# 触摸板手势
+    # Allow switching between workspaces with left and right swipes
+    bindgesture swipe:right workspace prev
+    bindgesture swipe:left workspace next
+
+    # Allow container movements by pinching them
+    bindgesture pinch:inward+up move up
+    bindgesture pinch:inward+down move down
+    bindgesture pinch:inward+left move left
+    bindgesture pinch:inward+right move right
+
+
+# 键盘布局配置
+input "type:keyboard" {
+    xkb_layout us
+    xkb_variant ,nodeadkeys
+    xkb_options grp:ctl_shift_toggle,ctrl:swap_lalt_lctl
+}
+
+input "0:0:Dell_Privacy_Driver" {
+  xkb_layout us
+  xkb_variant ,nodeadkeys
+  xkb_model "pc101"
+}

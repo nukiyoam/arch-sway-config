@@ -1,0 +1,12 @@
+# 截图配置
+
+  # 设置变量
+  set $screenshot_name ~/Pictures/ScreenShots/$(date +%Y-%m-%d_%H-%m-%s).png
+
+  # 截取整个屏幕
+  bindsym Print exec grim - | swappy -f -
+
+  #区域截屏
+  bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | swappy -f -
+
+
