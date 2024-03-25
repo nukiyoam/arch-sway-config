@@ -8,7 +8,7 @@
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    #bindsym $mod+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -53,3 +53,7 @@
     bindsym --locked XF86AudioPlay exec playerctl play-pause
     bindsym --locked XF86AudioNext exec playerctl next
     bindsym --locked XF86AudioPrev exec playerctl previous
+
+    # 电源键锁屏
+    # https://www.reddit.com/r/swaywm/comments/180ly44/how_to_change_power_button_behavior/
+    bindsym XF86PowerOff exec $lock_command

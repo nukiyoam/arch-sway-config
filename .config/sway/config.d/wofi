@@ -1,9 +1,9 @@
-#
-# Set Variables
-#
-    # Application Launcher
-    set $menu wofi --show drun -f -i --width 350
-	# Menu Script
-	set $altmenu wofi_csv
-	# Application spawner
-	set $spawn spawn
+# #
+# # Set Variables
+# #
+#     # Application Launcher
+#     set $menu wofi --show drun -f -i --width 350
+# 	# Menu Script
+# 	set $altmenu wofi_csv
+# 	# Application spawner
+# 	set $spawn spawn

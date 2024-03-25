@@ -2,4 +2,4 @@
 # Sway Notificaitons Setup
 #
 # Start mako - notifications
-exec mako
+exec_always mako

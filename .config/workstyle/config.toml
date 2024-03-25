@@ -10,7 +10,10 @@
 # precedence is given in order of apparition in this file.
 
 "alacritty" = ""
+"foot" = ""
 "github" = ""
+"Visual Studio Code" = ""
+"code" = ""
 "rust" = ""
 "google" = ""
 "private browsing" = ""
@@ -30,8 +33,11 @@
 "music" = ""
 "disk usage" = ""
 ".pdf" = ""
+"wechat" = "&#xf1d7;"
+"dingtalk" = "&#xf086;"
+"idea" = "&#xf121;"
 
 [other]
 fallback_icon = "🤨"
-deduplicate_icons = false
+deduplicate_icons = true
 separator = ": "

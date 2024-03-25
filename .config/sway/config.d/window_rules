@@ -2,6 +2,14 @@
     for_window [class="Clash for Windows"] floating enable 
     for_window [class="jetbrains-toolbox"] floating enable 
 
+# tab模式下由于中英文高度不一致导致tab高低变化, 在sway配置中加入
+for_window [title=".*"] title_format ゜%title゜
+
 # 标记 xwayland 窗口
     for_window [shell="xwayland"] title_format "[X] %title"
+
+for_window [class="^.*"] border pixel 2 # 把所有的窗口边框设为 2 像素
+
+#new_window default_border none
+
 

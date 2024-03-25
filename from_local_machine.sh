@@ -15,6 +15,11 @@ cp -R $HOME/.config/sway/ ./.config/
 echo "同步 $HOME/.config/waybar 内容到 .config/waybar"
 cp -R $HOME/.config/waybar/ ./.config/
 
+# 同步 workstyle 配置文件
+echo "同步 $HOME/.config/workstyle 内容到 .config/workstyle"
+cp -R $HOME/.config/workstyle/ ./.config/
+
+
 # 同步 foot 配置文件
 echo "同步 $HOME/.config/foot 内容到 .config/foot"
 cp -R $HOME/.config/foot/ ./.config/

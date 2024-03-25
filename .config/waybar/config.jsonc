@@ -110,7 +110,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%Y-%M-%d %A %H:%M}",
+        "format": "{:%Y-%m-%d %A %H:%M}",
         "format-alt": "{:%A, %B %d, %Y (%R)}",
         "locale": "zh_CN.utf8",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
